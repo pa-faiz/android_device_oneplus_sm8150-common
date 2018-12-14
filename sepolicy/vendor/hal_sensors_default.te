@@ -9,6 +9,9 @@ allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
 
 # Allow hal_sensors_default to read files in mnt_vendor_file
 r_dir_file(hal_sensors_default, mnt_vendor_file)
+allow hal_sensors_default mnt_vendor_file:dir search;
+allow hal_sensors_default vendor_persist_sensors_list:dir create_dir_perms;
+allow hal_sensors_default vendor_persist_sensors_list:file create_file_perms;
 
 # Allow hal_sensors_default to send SIGUSR1 to als_correction_service
 allow hal_sensors_default als_correction_service:process signal;
@@ -61,3 +64,4 @@ userdebug_or_eng(`
 dontaudit hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
 
 allow hal_sensors_default vendor_persist_sensors_list:file { w_file_perms getattr };
+allow hal_sensors_default sysfs:file { open read getattr };
