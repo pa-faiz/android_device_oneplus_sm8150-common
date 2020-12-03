@@ -141,6 +141,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_display_power_timer_ms=500 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
+# Disable configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
