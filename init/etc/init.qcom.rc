@@ -306,6 +306,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
+    # Disable native stats collection service
+    stop statsd
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
