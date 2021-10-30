@@ -38,7 +38,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_OVERRIDES += \
     vendor.audio.offload.buffer.size.kb=256 \
     vendor.display.enable_default_color_mode=0 \
-    debug.sf.auto_latch_unsignaled=false
+    debug.sf.auto_latch_unsignaled=false \
+    debug.sf.latch_unsignaled=false
 
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
