@@ -197,6 +197,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # fastbootd
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
 # Fingerprint
