@@ -6,7 +6,6 @@
  */
 
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.oneplus"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.oneplus"
 
 #include <hardware/hw_auth_token.h>
 
