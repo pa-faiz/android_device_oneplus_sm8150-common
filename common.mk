@@ -392,3 +392,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libwfdaac_vendor
+
+# Dex to make OTA go faster (OpenDelta)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5,6,7 \
+    dalvik.vm.boot-dex2oat-threads=7 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-threads=8
