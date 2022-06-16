@@ -225,6 +225,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.hardware.keystore_desede=true
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl:64 \
