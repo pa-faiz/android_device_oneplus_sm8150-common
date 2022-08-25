@@ -139,4 +139,8 @@
             <instance>wigigp2p</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.qccsyshal_aidl</name>
+        <fqname>IQccsyshal/default</fqname>
+    </hal>
 </compatibility-matrix>
