@@ -255,7 +255,6 @@ vendor/lib64/libminksocket.so|33a9e55842c1927539b8ed5d30bb3ddb12599a5e
 vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 
 # Data - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/bin/ATFWD-daemon|98b712409955b49330f7e179da8019be723850a3
 vendor/bin/adpl|4bcb42796dbcfba43dbc98a146b4d55ee9c4b06c
 vendor/bin/embmsslServer|851286d784bddf00c2e17060577c6476d73215c6
 vendor/bin/ipacm-diag|38d585eaa2d002ee0ef819201c13c731c6691551
@@ -286,7 +285,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|af284f9fee0a956d8
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so;MODULE_SUFFIX=_vendor|3d1ec041f6ecf79a1e732c17d302d9e6dc58456c
 vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|03631de9b3ad21566203258ceea743554019a19e
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so;MODULE_SUFFIX=_vendor|4cfb0e3f1f7880ae5a72dadf78beb416346f97f6
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so;MODULE_SUFFIX=_vendor|ed5b893fc89f0f754bc0377ee8c02bd0b88157d7
 
 # Display (HDR)
 vendor/etc/hdr_config.cfg
@@ -702,7 +700,6 @@ vendor/bin/qtigetprop|4d0e9e9adb56cdbe4562c2fa54416aa5eb2968e8
 vendor/bin/qtisetprop|232b6b778234ecf9806f4b9d9a4de9c28b70c108
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
 vendor/etc/init/qcrild.rc|320b644319182f96e494ea30de26cb52b448f592
-vendor/etc/seccomp_policy/atfwd@2.0.policy|da0ecc6378a5df652f412c4aac8423e50f27a53e
 vendor/lib64/deviceInfoServiceModule.so|d9fb334e23fc38ac9b105af43b76c7f796f3d02a
 vendor/lib64/liblqe.so|a9c9cc6539482655a5ef1c612050e7cd961c2fd3
 vendor/lib64/libqcrilFramework.so|822746346ea6fb7a52b5fbedef94c4f58bc6e2ca
