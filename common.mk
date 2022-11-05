@@ -123,6 +123,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
+# Dolby Support
+TARGET_USES_MIUI_DOLBY := true
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=2500 \
     ro.surface_flinger.set_touch_timer_ms=2500 \
