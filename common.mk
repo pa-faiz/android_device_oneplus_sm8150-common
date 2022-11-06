@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
 # Dolby Support
 TARGET_USES_MIUI_DOLBY := true
 
+# Dolby Config File
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/dolby/config/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=2500 \
     ro.surface_flinger.set_touch_timer_ms=2500 \
