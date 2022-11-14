@@ -75,10 +75,10 @@ void vendor_load_properties() {
   int prj_version = stoi(android::base::GetProperty("ro.boot.prj_version", ""));
   int project_name = stoi(android::base::GetProperty("ro.boot.project_name", ""));
   int rf_version = stoi(android::base::GetProperty("ro.boot.rf_version", ""));
-  switch(project_name){
+  switch(project_name) {
     case 18857:
       /* OnePlus 7 */
-      switch (rf_version){
+      switch (rf_version) {
         case 1:
           /* China */
           property_override("ro.product.model", "GM1900");
@@ -99,7 +99,7 @@ void vendor_load_properties() {
       break;
     case 18821:
       /* OnePlus 7 Pro */
-      switch (rf_version){
+      switch (rf_version) {
         case 1:
           /* China */
           property_override("ro.product.model", "GM1910");
@@ -124,7 +124,7 @@ void vendor_load_properties() {
       break;
     case 18865:
       /* OnePlus 7T */
-      switch (rf_version){
+      switch (rf_version) {
         case 1:
           /* China */
           property_override("ro.product.model", "HD1900");
@@ -149,7 +149,7 @@ void vendor_load_properties() {
       break;
     case 19801:
       /* OnePlus 7T Pro */
-      switch (rf_version){
+      switch (rf_version) {
         case 1:
           /* China */
           property_override("ro.product.model", "HD1910");
@@ -173,11 +173,11 @@ void vendor_load_properties() {
       property_override("ro.product.model", "HD1925");
       property_override("persist.radio.multisim.config", "ssss");
       break;
-    }
+  }
 
-    property_override("vendor.boot.prj_version", std::to_string(prj_version).c_str());
-    property_override("vendor.boot.rf_version", std::to_string(rf_version).c_str());
-    property_override("vendor.rf.version", std::to_string(rf_version).c_str());
+  property_override("vendor.boot.prj_version", std::to_string(prj_version).c_str());
+  property_override("vendor.boot.rf_version", std::to_string(rf_version).c_str());
+  property_override("vendor.rf.version", std::to_string(rf_version).c_str());
 
   // dalvikvm props
   load_dalvikvm_properties();
