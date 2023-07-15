@@ -85,13 +85,19 @@ BOARD_KERNEL_CMDLINE := \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
+    video=vfb \
+    640x400,bpp=32 \
+    memsize=3072000 \
     swiotlb=2048
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
-KERNEL_DEFCONFIG := vendor/sm8150-perf_defconfig
-KERNEL_FULL_LLVM := true
+KERNEL_DEFCONFIG := neptune_defconfig
+TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/op_disable_charge
