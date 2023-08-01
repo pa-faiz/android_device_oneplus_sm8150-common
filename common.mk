@@ -124,9 +124,6 @@ PRODUCT_COPY_FILES += \
 # Display
 TARGET_USE_AIDL_QTI_MEMTRACK := true
 
-PRODUCT_PACKAGES += \
-    vendor.oneplus.hardware.display@1.0.vendor
-
 # Dolby Manager
 PRODUCT_PACKAGES += \
     DolbyManager
