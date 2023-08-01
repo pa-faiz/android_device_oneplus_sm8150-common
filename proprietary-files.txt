@@ -286,10 +286,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|03631de9b3ad21566
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so;MODULE_SUFFIX=_vendor|4cfb0e3f1f7880ae5a72dadf78beb416346f97f6
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so;MODULE_SUFFIX=_vendor|ed5b893fc89f0f754bc0377ee8c02bd0b88157d7
 
-# Display
-vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service
-vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc
-
 # Display (HDR)
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
