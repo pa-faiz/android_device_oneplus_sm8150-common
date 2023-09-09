@@ -521,6 +521,11 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
+# Media profiles
+odm/etc/media_profiles_V1_0.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_vendor.xml
+
 # MDM
 vendor/bin/init.mdm.sh
 vendor/bin/ks
