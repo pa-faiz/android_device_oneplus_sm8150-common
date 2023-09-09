@@ -10,3 +10,6 @@ vendor.oneplus.hardware.param::IOneplusParam                          u:object_r
 
 # cnd
 vendor.qti.diaghal::Idiag                                             u:object_r:hal_diag_hwservice:s0
+
+# dolby
+vendor.dolby_v3_6.hardware.dms360::IDms                               u:object_r:hal_dms_hwservice:s0
