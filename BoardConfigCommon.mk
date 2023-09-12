@@ -50,9 +50,6 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 80
 TARGET_USES_FOD_ZPOS := true
 TARGET_SURFACEFLINGER_UDFPS_LIB := libudfps_extension.oneplus
 
-# Hacks
-BUILD_BROKEN_DUP_RULES := true
-
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(VENDOR_PATH)/configs/vintf/oneplus_vendor_framework_compatibility_matrix.xml
