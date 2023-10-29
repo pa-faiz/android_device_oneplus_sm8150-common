@@ -249,6 +249,7 @@ PRODUCT_PACKAGES += \
     init.oneplus.usb.rc \
     init.op.display.rc \
     init.qcom.class_core.sh \
+    init.persist.sensors.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
