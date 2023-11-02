@@ -347,7 +347,9 @@ PRODUCT_PACKAGES += \
     als_correction_service.oneplus_msmnile \
     android.hardware.sensors@2.0-service.oneplus_msmnile \
     sensors.oneplus \
-    libsensorndkbridge
+    libsensorndkbridge \
+    init.persist.sensors.rc \
+    init.persist.sensors.sh
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.naruto.light.support=true \

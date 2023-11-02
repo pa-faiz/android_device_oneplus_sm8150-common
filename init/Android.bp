@@ -26,10 +26,16 @@ sh_binary {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.persist.sensors.rc",
+    src: "etc/init.persist.sensors.rc",
+    vendor: true,
+}
+
 sh_binary {
     name: "init.persist.sensors.sh",
     src: "etc/init.persist.sensors.sh",
-    device_specific: true,
+    vendor: true,
 }
 
 sh_binary {
