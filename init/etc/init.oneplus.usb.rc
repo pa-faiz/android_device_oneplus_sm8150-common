@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-on charger
+on property:init.svc.vendor.charger=running
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
     mkdir /config/usb_gadget/g1 0770 shell shell
