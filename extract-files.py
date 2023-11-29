@@ -128,6 +128,13 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
+    (
+        'odm/lib/libdlbdsservice_v3_6.so',
+        'odm/lib/libstagefright_soft_ddpdec.so',
+        'odm/lib/libstagefrightdolby.so',
+        'odm/lib64/libdlbdsservice_v3_6.so',
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
