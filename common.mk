@@ -162,7 +162,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     debug.sf.disable_client_composition_cache=1 \
     vendor.display.qdcm.disable_factory_mode=1 \
-    vendor.display.qdcm.mode_combine=1
+    vendor.display.qdcm.mode_combine=1 \
+    ro.surface_flinger.enable_frame_rate_override=false
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
