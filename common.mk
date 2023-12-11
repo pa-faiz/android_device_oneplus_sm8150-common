@@ -37,6 +37,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.noisy.broadcast.delay=600 \
     vendor.audio.offload.pstimeout.secs=3
 
+PRODUCT_VENDOR_OVERRIDES += \
+    vendor.display.enable_default_color_mode=0
+
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
     persist.vendor.audio.hac.enable=false \
@@ -114,6 +117,12 @@ TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 PRODUCT_PACKAGES += \
     DolbyManager
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_dsc_cmd_mode_oneplus_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_dsc_cmd_mode_oneplus_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_sofef03f_m_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_sofef03f_m_fhd_cmd_mode_dsc_dsi_panel.xml
+
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
     ro.vendor.dolby.model=PAFM00 \
@@ -125,7 +134,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=2500 \
     ro.surface_flinger.set_touch_timer_ms=2500 \
     ro.surface_flinger.set_display_power_timer_ms=500 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+    persist.sys.sf.native_mode=0
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
@@ -134,7 +144,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.sensortype=2 \
     persist.vendor.color.matrix=2 \
     vendor.display.disable_mask_layer_hint=1 \
-    debug.sf.enable_gl_backpressure=false
+    debug.sf.enable_gl_backpressure=false \
+    vendor.display.qdcm.mode_combine=1
 
 # HWUI
 PRODUCT_VENDOR_PROPERTIES += \
@@ -212,6 +223,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oem.rc \
     init.oneplus.usb.rc \
+    init.op.display.rc \
     init.qcom.class_core.sh \
     init.persist.sensors.sh \
     init.qcom.early_boot.sh \

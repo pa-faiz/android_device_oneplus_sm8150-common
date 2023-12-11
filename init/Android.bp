@@ -124,6 +124,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.op.display.rc",
+    src: "etc/init.op.display.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
 // fstab
 soong_config_module_type {
     name: "oneplus_msmnile_init_prebuilt_etc",
