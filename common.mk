@@ -36,7 +36,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.offload.pstimeout.secs=3
 
 PRODUCT_VENDOR_OVERRIDES += \
-    vendor.audio.offload.buffer.size.kb=256
+    vendor.audio.offload.buffer.size.kb=256 \
+    vendor.display.enable_default_color_mode=0
 
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
