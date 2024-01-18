@@ -65,6 +65,9 @@ function blob_fixup() {
             vendor/lib64/libgf_ud_hal.so )
             sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${2}"
             ;;
+            vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service | vendor/lib*/libstagefrightdolby.so | vendor/lib*/libstagefright_soft_*.so | vendor/lib*/libdlbdsservice.so)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33-dolby.so" "${2}"
+            ;;
             esac
     ;;
     esac
