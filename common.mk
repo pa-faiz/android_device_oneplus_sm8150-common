@@ -126,7 +126,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.ad=1 \
     ro.vendor.display.sensortype=2 \
     persist.vendor.color.matrix=2 \
-    vendor.display.disable_mask_layer_hint=1
+    vendor.display.disable_mask_layer_hint=1 \
+    debug.sf.enable_gl_backpressure=false
 
 # Display Mode
 PRODUCT_PACKAGES += \
