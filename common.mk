@@ -165,7 +165,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.qdcm.disable_factory_mode=1 \
     vendor.display.qdcm.mode_combine=1 \
     ro.surface_flinger.enable_frame_rate_override=false \
-    debug.sf.predict_hwc_composition_strategy=0
+    debug.sf.predict_hwc_composition_strategy=0 \
+    debug.sf.enable_gl_backpressure=false
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
