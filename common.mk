@@ -190,6 +190,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
 
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti_recovery
+endif
+
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
