@@ -76,10 +76,6 @@ on fs
     mount ext4 /dev/block/bootdevice/by-name/op1 /mnt/vendor/op1 noatime nosuid nodev barrier=1
     mkdir /mnt/vendor/oneplus 0660 system system
 
-on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
-
 on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
