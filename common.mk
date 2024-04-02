@@ -24,9 +24,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # Audio
 PRODUCT_VENDOR_PROPERTIES += \
     af.fast_track_multiplier=2 \
@@ -104,9 +101,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_PACKAGES += \
     Aperture
-
-PRODUCT_COPY_FILES += \
-    hardware/qcom/media/conf_files/msmnile/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.oneplus.camera,org.lineageos.aperture \
