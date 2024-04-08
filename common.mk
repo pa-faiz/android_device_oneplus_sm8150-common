@@ -170,6 +170,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.enable_gl_backpressure=false \
     debug.sf.enable_transaction_tracing=false
 
+# HWUI
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.hwui.use_hint_manager=true \
+    debug.hwui.target_cpu_time_percent=30
+
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
