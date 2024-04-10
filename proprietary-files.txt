@@ -883,13 +883,6 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|c20b05b20874e6b7f14cd61346646c79c363f42f
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|5496f7816036ef71aec0116864032f8a6078aee7
 
-# SS Restart - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
-vendor/bin/ssr_diag|85f08630de1eed07e2ec107c453da3db49c5c9db
-vendor/bin/ssr_setup|63d4825284d0966a16106e532d96677477ffe71e
-vendor/bin/subsystem_ramdump|a8188725e6ab33effdb220dffdaac3eb830b1dc2
-vendor/lib/libsubsystem_control.so|99a79e1e456a1d4138e19a555731f57f477e0300
-vendor/lib64/libsubsystem_control.so|133b04beab74a8c56510831fdbd40d19abfd75dc
-
 # TFTP - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/tftp_server|11ee89a3cc200f670a71fbd61c2aff67355571d6
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb

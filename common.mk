@@ -300,8 +300,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.mdm_helper.fail_action=retry,cold_reset,s3_reset,panic \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
+    persist.vendor.mdm_helper.fail_action=retry,cold_reset,s3_reset,panic
 
 # Sensors
 PRODUCT_COPY_FILES += \
