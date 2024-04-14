@@ -136,10 +136,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     debug.sf.enable_gl_backpressure=false
 
-# Display Mode
-PRODUCT_PACKAGES += \
-    DisplayMode
-
 # HWUI
 PRODUCT_VENDOR_PROPERTIES += \
     debug.hwui.use_hint_manager=true \
