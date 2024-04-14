@@ -154,10 +154,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_mask_layer_hint=1 \
     debug.sf.disable_client_composition_cache=1
 
-# Display Mode
-PRODUCT_PACKAGES += \
-    DisplayMode
-
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
