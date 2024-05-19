@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.mock
+
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
