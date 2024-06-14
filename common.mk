@@ -170,7 +170,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.enable_frame_rate_override=false \
     debug.sf.predict_hwc_composition_strategy=0 \
     debug.sf.enable_gl_backpressure=false \
-    debug.sf.enable_transaction_tracing=false
+    debug.sf.enable_transaction_tracing=false \
+    ro.usb.uvc.enabled=true
 
 # HWUI
 PRODUCT_VENDOR_PROPERTIES += \
@@ -303,7 +304,8 @@ PRODUCT_PACKAGES += \
     AOSPAOnePlusSM8150SystemUI \
     OnePlusSM8150Frameworks \
     OnePlusSM8150Settings \
-    OnePlusSM8150SystemUI
+    OnePlusSM8150SystemUI \
+    OnePlusSM8150DeviceAsWebcam
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
