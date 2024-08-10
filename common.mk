@@ -22,7 +22,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     checkpoint_gc \
-    otapreopt_script
+    otapreopt_script \
+    libbatterylistener
 
 # Audio
 PRODUCT_VENDOR_PROPERTIES += \
