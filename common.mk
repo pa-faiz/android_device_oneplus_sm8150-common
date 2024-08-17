@@ -54,14 +54,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl:32 \
-    audio.bluetooth.default:32 \
-    com.dsi.ant@1.0.vendor:64 \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor:32 \
-    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
-    vendor.qti.hardware.btconfigstore@2.0.vendor:64
-
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.oneplus.bt.asd.chain=0 \
     persist.vendor.oneplus.bt.asd.firmware=false \
@@ -86,12 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
     android.hardware.camera.provider@2.4-impl:64 \
-    android.hardware.camera.provider@2.4-service_64 \
-    libxml2 \
-    vendor.oneplus.hardware.camera@1.0.vendor:64 \
-    vendor.qti.hardware.camera.device@1.0.vendor:64
+    android.hardware.camera.provider@2.4-service_64
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.camera.res.fmq.size=1048576
@@ -163,8 +151,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oneplus \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.qfp=true \
@@ -196,7 +183,6 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1.vendor \
     android.hardware.health-service.qti
 
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
@@ -245,7 +231,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl:64 \
+    android.hardware.nfc@1.0-impl \
     NfcNci \
     Tag
 
@@ -306,7 +292,6 @@ PRODUCT_PACKAGES += \
     als_correction_service.oneplus_msmnile \
     android.hardware.sensors@2.1-service.oneplus_msmnile \
     sensors.oneplus \
-    libsensorndkbridge \
     init.persist.sensors.rc \
     init.persist.sensors.sh
 
@@ -353,31 +338,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
-# VNDK
-PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0.vendor:64 \
-    android.hardware.bluetooth@1.1.vendor \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.neuralnetworks@1.3.vendor \
-    android.hardware.nfc@1.2.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    android.system.net.netd@1.1.vendor \
-    libcrypto-v33
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.2.vendor \
     wifi-mac-generator \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -401,7 +367,3 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libwfdaac_vendor
