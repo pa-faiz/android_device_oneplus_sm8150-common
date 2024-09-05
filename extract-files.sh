@@ -68,6 +68,10 @@ function blob_fixup() {
             odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
+            vendor/lib64/mediadrm/libwvdrmengine.so|vendor/lib64/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
+            ;;
             esac
     ;;
     esac

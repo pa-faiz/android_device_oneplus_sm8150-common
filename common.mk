@@ -404,7 +404,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio@1.5.vendor \
     android.hardware.secure_element@1.2.vendor \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libcrypto-v33
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
