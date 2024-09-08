@@ -25,6 +25,8 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 # Audio
+TARGET_PROVIDES_AUDIO_HAL := true
+
 PRODUCT_VENDOR_PROPERTIES += \
     af.fast_track_multiplier=2 \
     audio.deep_buffer.media=true \
