@@ -2,6 +2,9 @@
 type fpc_images_file, file_type, core_data_file_type, data_file_type;
 type wifi_nv_data_file, file_type, data_file_type;
 
+# Dolby
+type vendor_dolby_data_file, file_type, data_file_type;
+
 # persist
 type persist_camera_file, file_type;
 
