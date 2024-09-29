@@ -85,7 +85,7 @@ setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 write_headers "oneplus7pro oneplus7 oneplus7tpronr oneplus7tpro oneplus7t"
 
 # The standard common blobs
-write_makefiles "${MY_DIR}/proprietary-files.txt" true
+write_makefiles "${MY_DIR}/proprietary-files.txt"
 
 # Finish
 write_footers
@@ -98,7 +98,7 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     write_headers
 
     # The standard device blobs
-    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
+    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt"
 
     # Finish
     write_footers
