@@ -48,7 +48,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 80
 
 # FOD
 TARGET_USES_FOD_ZPOS := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //device/oneplus/common:libudfps_extension.oneplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := libudfps_extension.oneplus
 
 # Hacks
 BUILD_BROKEN_DUP_RULES := true
