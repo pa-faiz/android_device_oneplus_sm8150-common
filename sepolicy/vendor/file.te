@@ -5,9 +5,6 @@ type wifi_nv_data_file, file_type, data_file_type;
 # Dolby
 type vendor_dolby_data_file, file_type, data_file_type;
 
-# KProfiles
-type sysfs_kprofiles, sysfs_type, fs_type;
-
 # persist
 type persist_camera_file, file_type;
 
