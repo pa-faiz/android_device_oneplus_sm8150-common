@@ -76,14 +76,10 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="aidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.3</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
+        <version>4</version>
+        <fqname>IFingerprint/default</fqname>
     </hal>
     <hal format="hidl" optional="false">
         <name>android.hardware.boot</name>
