@@ -121,7 +121,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/mediadrm/libwvdrmengine.so',
         'vendor/lib64/libwvhidl.so',
     ): blob_fixup()
-        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+        .add_needed('libcrypto_shim.so'),
     (
         'vendor/lib64/libarcsoft_dualcam_refocus_preview.so',
         'vendor/lib64/libarcsoft_super_night_raw.so'
