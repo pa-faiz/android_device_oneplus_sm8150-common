@@ -412,7 +412,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.system.net.netd@1.1.vendor \
-    libcrypto-v33 \
+    libcrypto_shim \
     libaudioroute.vendor \
     libprocessgroup.vendor \
     libstagefright_softomx_plugin.vendor
