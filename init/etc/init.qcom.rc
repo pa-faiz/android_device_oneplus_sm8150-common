@@ -80,6 +80,9 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
+    # QCC
+    enable qccsyshal
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
     # Vibrator
