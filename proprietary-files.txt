@@ -58,7 +58,9 @@ vendor/lib/libopf.so
 vendor/lib/libqtigef.so;MODULE_SUFFIX=_oneplus;OVERRIDES=libqtigef
 vendor/lib/libssrec.so;MODULE_SUFFIX=_oneplus;OVERRIDES=libssrec
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -844,6 +846,11 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib/libsensorslog.so
+vendor/lib/libsns_fastRPC_util.so
+vendor/lib/libsnsapi.so;DISABLE_CHECKELF
+vendor/lib/libsnsdiaglog.so;DISABLE_CHECKELF
+vendor/lib/libssc.so;DISABLE_CHECKELF
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libopf.so
 vendor/lib64/libsensorcal.so
@@ -851,9 +858,9 @@ vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libssc.so
+vendor/lib64/libsnsapi.so;DISABLE_CHECKELF
+vendor/lib64/libsnsdiaglog.so;DISABLE_CHECKELF
+vendor/lib64/libssc.so;DISABLE_CHECKELF
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
@@ -884,6 +891,11 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|5496f7816036ef71aec0116864032f8a60
 # Blobs to satisfy check_elf
 vendor/lib/libdsutils.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003c800f51b4
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crt.so
+vendor/lib64/libasn1crtx.so
+vendor/lib64/libxtwifi_server_protocol.so
+vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 
 # TFTP - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/bin/tftp_server|11ee89a3cc200f670a71fbd61c2aff67355571d6
