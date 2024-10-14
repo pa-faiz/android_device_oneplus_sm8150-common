@@ -355,6 +355,11 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.naruto.light.support=true \
     persist.vendor.sensors.enable.mag_filter=true
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(VENDOR_PATH) \
+    device/oneplus/sm8150-common
+
 # Storage
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
