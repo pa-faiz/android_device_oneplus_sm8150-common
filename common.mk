@@ -262,7 +262,8 @@ PRODUCT_PACKAGES += \
     OnePlusSM8150Frameworks \
     OnePlusSM8150Settings \
     OnePlusSM8150SystemUI \
-    OnePlusFrameworksOverlay
+    OnePlusFrameworksOverlay \
+    NfcOverlay
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
