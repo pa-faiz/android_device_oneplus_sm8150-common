@@ -644,17 +644,17 @@ vendor/lib64/libpdnotifier.so|f7921455da0719e073a7bcc5ce851ff9e43e79d4
 vendor/etc/public.libraries.txt|3e96f117599019be1aa99b965961005a66170250
 
 # QCC (system) - from LA.QSSI.15.0.r1
-system_ext/app/QCC/QCC.apk|522668044bfc8b40c72604ece01ba2999cc74694
-system_ext/bin/qccsyshal@1.2-service|071d263be760c7cd35cebe3de50b66727b1bab6b
+system_ext/app/QCC/QCC.apk|817cf6377ab9969b48d90365e7494048f4b24235
+system_ext/bin/qccsyshal@1.2-service|93fc045060a4242a89a20c7c195914bf420bea84
 system_ext/bin/qccsyshal_aidl-service|a9f8c0a545a017507697ab3ebbadc03e01273b09
-system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc|9ba231d38d960ba6900194d31318de58512bf7d0
-system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc|3be4662a2b1a6c44cc134390ba013cca664877f3
+system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc|a28aa55fe5837c7e271f230c5e370f0931a09f1d
+system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc|a6addd564ea9068105d6cb8b4b7fb169469d9965
 system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml|84fdcd93d53a1b399b9aa765095d47cdb0d872df
 system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml|7d074a1c47dfc406de5c41c2ee6289118653f13f
 system_ext/lib64/libqcc_file_agent_sys.so|dd495f934cff30d8ee82f21b0a123d69bf7b408b
 system_ext/lib64/libqcc_netstats.so|4e5ef6cbb2b9fba5e5b4647781e4b9cfe99a83e5
 system_ext/lib64/libqcc.so|55393c0564730880882a01d3417ea21afa808979
-system_ext/lib64/libqccdme.so|e6782bf56df9fcafb30350895295ebdfbe9067fe
+system_ext/lib64/libqccdme.so|62d88aa781845f3a7478186cef442fa60048c608
 system_ext/lib64/libqccfileservice.so|4ea715ba00303096daa1a04625e3f20c1844813b
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so|88b21e904b1644bc520c348b4004f07a8976a0ae
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so|cd39a8e5edcc0851da6870e8011cf62a288973c9
