@@ -33,7 +33,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=6 \
     vendor.audio.cts.media=false \
     vendor.audio.noisy.broadcast.delay=600 \
-    vendor.audio.offload.pstimeout.secs=3
+    vendor.audio.offload.pstimeout.secs=3 \
+    libbthost_if_sink.vendor \
+    android.media.audio.common.types-V2-cpp
 
 PRODUCT_VENDOR_OVERRIDES += \
     vendor.audio.offload.buffer.size.kb=256 \
@@ -65,7 +67,8 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor:64 \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor:32 \
     vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
-    vendor.qti.hardware.btconfigstore@2.0.vendor:64
+    vendor.qti.hardware.btconfigstore@2.0.vendor:64 \
+    libbthost_if
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.oneplus.bt.asd.chain=0 \
@@ -409,7 +412,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.system.net.netd@1.1.vendor \
-    libcrypto-v33
+    libcrypto-v33 \
+    libaudioroute.vendor \
+    libprocessgroup.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
