@@ -63,7 +63,15 @@ function lib_to_package_fixup_vendor_variants() {
             echo "$1_vendor"
             ;;
         libOmxCore | \
-            libwpa_client)
+            libwpa_client | \
+            vendor.display.color@1.0 | \
+            vendor.display.color@1.1 | \
+            vendor.display.color@1.2 | \
+            vendor.display.color@1.3 | \
+            vendor.display.postproc@1.0 | \
+            vendor.qti.hardware.vpp@1.1 | \
+            vendor.qti.hardware.vpp@1.2 | \
+            vendor.qti.hardware.vpp@1.3)
             # Android.mk only packages
             ;;
         *)
