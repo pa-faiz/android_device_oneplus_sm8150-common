@@ -319,7 +319,7 @@ vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc
 # Display (HDR)
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
-vendor/lib64/libhdr_tm.so
+vendor/lib64/libhdr_tm.so;MODULE_SUFFIX=_vendor
 
 # Display (SDM) - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 vendor/lib64/libdisplayqos.so;MODULE_SUFFIX=_vendor|5548732c916e629f18f45ce257ce843b679a136a
