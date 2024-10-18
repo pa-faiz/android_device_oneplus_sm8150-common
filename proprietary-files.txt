@@ -128,7 +128,7 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libmorpho_image_refiner.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libopcamera_native_modules.so
-vendor/lib64/libOpenCL.so
+vendor/lib64/libOpenCL.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libstblur_capture_api.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
