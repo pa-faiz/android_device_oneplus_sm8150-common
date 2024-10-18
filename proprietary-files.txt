@@ -328,9 +328,9 @@ vendor/lib64/libsdedrm.so;MODULE_SUFFIX=_vendor|7cf5f4e7e4dacae88e317d3397fdf25d
 vendor/lib64/libsdm-color.so;MODULE_SUFFIX=_vendor|d0984c33dcbf84940676917e0c3584b0ccfeaf03
 vendor/lib64/libsdm-colormgr-algo.so;MODULE_SUFFIX=_vendor|15f696a4575868e528360896f1e0098d531899c0
 vendor/lib64/libsdm-diag.so;MODULE_SUFFIX=_vendor|98c8e8a3a56bc0091f56714d569f03066f68fdea
-vendor/lib64/libsdm-disp-vndapis.so;libsdm-disp-vndapis|60da199073d2b0881bf075190a644b332503f39c
-vendor/lib64/libsdmextension.so;libsdm-disp-vndapis|e10d29f29b7a53b75369e58e8a165b2b86609f26
-vendor/lib64/libtinyxml2_1.so;libsdm-disp-vndapis|ff32deb110acb02cb5def5f3404f9064c1276483
+vendor/lib64/libsdm-disp-vndapis.so;MODULE_SUFFIX=_vendor|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdmextension.so;MODULE_SUFFIX=_vendor|e10d29f29b7a53b75369e58e8a165b2b86609f26
+vendor/lib64/libtinyxml2_1.so;MODULE_SUFFIX=_vendor|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
