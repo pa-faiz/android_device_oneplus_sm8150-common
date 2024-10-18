@@ -48,7 +48,11 @@ function lib_to_package_fixup_vendor_variants() {
             com.qualcomm.qti.imscmservice* | \
             com.qualcomm.qti.uceservice* | \
             libmmosal | \
-            vendor.display.* | \
+            vendor.display.color@1.0 | \
+            vendor.display.color@1.1 | \
+            vendor.display.color@1.2 | \
+            vendor.display.color@1.3 | \
+            vendor.display.postproc@1.0 | \
             vendor.qti.data.* | \
             vendor.qti.diaghal@1.0 | \
             vendor.qti.hardware.data.* | \
