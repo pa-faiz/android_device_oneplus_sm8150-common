@@ -52,7 +52,7 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libopf.so
-vendor/lib/libqtigef.so
+vendor/lib/libqtigef.so;MODULE_SUFFIX=_vendor
 vendor/lib/libssrec.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libhaptic_effect.so
@@ -247,8 +247,8 @@ odm/lib/libdapparamstorage_v3_6.so|c6c36fba280f2373034cf754870611614bf0f22f
 odm/lib/libdeccfg_v3_6.so|742cadaf61aea20eabdac099668bfd43ddf4bb35
 odm/lib/libdlbdsservice_v3_6.so|d0c30c56c88635392d05ccbca8d6b136b7f405e2
 odm/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
-odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
-odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so|7b9a91a1d15c90a0d804d372554e561380cd109e
+odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so;FIX_SONAME|928cf60bd5656eee502bcb7c9bc5a686ce821bbe
+odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so;FIX_SONAME|a4152db7d11607486cb39e426e5dc6865d7b48a7
 odm/lib/libstagefrightdolby.so|e34e83479cfdaa9d55fe790815742d7a5bde1e52
 odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
 odm/lib/soundfx/libswdap_v3_6.so|3e521eb43ea5b43e2436f2c46d7b8f169b2f1553

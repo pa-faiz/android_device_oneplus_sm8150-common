@@ -39,6 +39,7 @@ lib_fixups: lib_fixups_user_type = {
         'com.qualcomm.qti.uceservice@2.2',
         'com.qualcomm.qti.uceservice@2.3',
         'libmmosal',
+        'liqtigef',
         'vendor.qti.data.factory@2.0',
         'vendor.qti.data.factory@2.1',
         'vendor.qti.data.factory@2.2',
