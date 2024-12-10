@@ -120,6 +120,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libwvhidl.so',
     ): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+    (
+        'vendor/lib64/libarcsoft_dualcam_refocus_preview.so',
+        'vendor/lib64/libarcsoft_super_night_raw.so'
+    ): blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open')
+        .clear_symbol_version('remote_register_buf_attr')
+        .clear_symbol_version('remote_register_buf'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
