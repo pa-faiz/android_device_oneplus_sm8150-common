@@ -277,3 +277,9 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     class hal
     user nfc
     group nfc
+
+service iop-hal-2-0 /vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+    override
+    class hal
+    user root
+    group root readproc
