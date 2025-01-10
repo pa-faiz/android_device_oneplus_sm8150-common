@@ -253,6 +253,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    aptxalsOverlay \
     AOSPAOnePlusSM8150Frameworks \
     AOSPAOnePlusSM8150SystemUI \
     OnePlusSM8150Frameworks \
