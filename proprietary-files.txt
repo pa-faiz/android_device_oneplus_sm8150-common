@@ -142,10 +142,6 @@ vendor/lib64/libvl53l1_daemon.so
 vendor/lib64/sensors.hal.tof.so
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
 
-# Generated camera libraries (commit message)
-vendor/lib64/camera.device@3.2-impl.so;MODULE_SUFFIX=_oneplus;OVERRIDES=camera.device@3.2-impl|fb016f906a0defd9317b63102f558dfcaa5f4c74
-vendor/lib64/camera.device@3.3-impl.so;MODULE_SUFFIX=_oneplus;OVERRIDES=camera.device@3.3-impl|d1fcc5580ebf885f3e2c00dd9cc06cac4ddbd55d
-
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
