@@ -59,3 +59,5 @@ userdebug_or_eng(`
   allow hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
 ')
 dontaudit hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
+
+allow hal_sensors_default vendor_persist_sensors_list:file { w_file_perms getattr };
