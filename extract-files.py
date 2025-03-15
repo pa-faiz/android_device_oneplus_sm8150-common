@@ -136,6 +136,8 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libdlbdsservice_v3_6.so',
     ): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    ('vendor/lib64/ese_spi_nxp.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
